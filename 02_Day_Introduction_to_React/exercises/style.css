@@ -1,0 +1,12 @@
+:is(.header, .main, .footer) {
+  color: snow;
+  background-color: #242424;
+}
+
+blockquote li:first-of-type:before {
+  content: "\201C";
+}
+
+blockquote li:last-of-type::after {
+  content: "\201D";
+}
