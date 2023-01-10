@@ -1,7 +1,7 @@
 ## Exercises: Level 1
 
 1. What is the difference between a regular function and an arrow function?
-    - The two main differences is the way they are declared (its definition) and the use of ```this``` key word (it does not work on arrow functions)
+    - The two main differences is the way they are declared (its definition) and the use of ```this``` keyword (it refers to the outer lexical environment it's been invoked since it does not have its own context unlike regular functions)
 
 2. What is a React Component?
     - A React component is block of code that can be easily reused across the application UI code. Technically, it's a function that returns JSX
