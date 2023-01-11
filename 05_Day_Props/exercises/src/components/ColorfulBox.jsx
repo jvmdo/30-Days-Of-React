@@ -14,16 +14,15 @@ const baseStyle = {
   fontSize: "1.5rem",
 };
 
-export function ColorfulBox({ color, randomColor = randomHexColor() }) {
-  const definedColor = color || randomColor;
+export function ColorfulBox({ color = randomHexColor() }) {
   return (
     <div
       style={{
         ...baseStyle,
-        backgroundColor: `${definedColor}`,
+        backgroundColor: `${color}`,
       }}
     >
-      {definedColor}
+      {color}
     </div>
   );
 }
