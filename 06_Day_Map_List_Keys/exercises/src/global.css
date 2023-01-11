@@ -1,0 +1,40 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Tahoma, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 20rem;
+}
+
+/* Exercise wrapper */
+.exercise {
+  border: 5px solid #64dcfc;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  counter-increment: exerciseNumber;
+}
+
+.exercise::after {
+  content: "Exercise " counter(exerciseNumber);
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bold;
+  color: #64dcfc;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.25rem 1rem;
+}
