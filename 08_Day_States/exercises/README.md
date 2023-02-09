@@ -23,8 +23,12 @@ Since React 16, states variables are better instantiated with useState hook. Thi
 Utilizing the update function returned by the useState hook.
 
 ### Level 2
+
 ### Level 3
+
 I mixed exercises level 2 and 3 into one single project implemented in this current directory.
+
+### [Live preview](https://random-country-flag-jvmdo.vercel.app/)
 
 ### Color pallettes
 
