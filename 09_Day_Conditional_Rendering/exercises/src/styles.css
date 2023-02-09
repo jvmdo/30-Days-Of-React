@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: bisque;
+}
+
+body {
+  color: dimgray;
+  min-width: 20rem;
+  min-height: 100vh;
+  text-align: center;
+  padding-inline: 1rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-block: 2rem 1rem;
+}
+
+h1 + div {
+  width: fit-content;
+  margin: 0 auto 1rem;
+}
+
+ol {
+  list-style-type: none;
+  text-align: start;
+  word-wrap: break-word;
+}
+
+li:not(:last-of-type) {
+  margin-bottom: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 1rem;
+  max-width: 20rem;
+  margin-inline: auto;
+  border: 1px dashed firebrick;
+  padding: 0.5rem;
+}
+
+form > * {
+  flex: 1 1 8rem;
+}
+
+select {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  appearance: none;
+  background-color: white;
+  border: none;
+  color: darkslategray;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+.season,
+.daytime {
+  position: relative;
+}
+
+:is(.season, .daytime)::after {
+  content: "🔽";
+  position: absolute;
+  bottom: 0.3rem;
+  right: 0.25rem;
+  pointer-events: none;
+}
+
+span {
+  color: darkslategray;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+.bottom {
+  flex: 1;
+  display: flex;
+}
+
+.background {
+  flex: 1;
+}
+
+.foreground {
+  flex: 1;
+  height: 100%;
+}
