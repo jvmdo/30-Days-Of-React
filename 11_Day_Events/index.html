@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Level 1.8</title>
+  </head>
+  <body onmousemove="cursorCoords(event)" style="min-height: 100vh">
+    <h1>Where is the mouse cursor coordinates?</h1>
+    <p>Cursor coordinates: (x: 0, y: 0)</p>
+    <!-- <p>Cursor coordinates: (0, 0)</p> -->
+    <script>
+      function cursorCoords({ x, y }) {
+        p.innerText = p.innerText
+          .replace(/(x: )\d+/, `$1${x}`)
+          .replace(/(y: )\d+/, `$1${y}`);
+
+        /* p.innerText = p.innerText
+          .replace(/(\()\d+/, `$1${x}`)
+          .replace(/\d+(\))/, `${y}$1`); */
+      }
+
+      const p = document.querySelector("p");
+
+      // window.addEventListener("mousemove", cursorCoords);
+    </script>
+  </body>
+</html>

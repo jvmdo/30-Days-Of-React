@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  border: 5px dashed gold;
+  position: relative;
+}
+
+.box {
+  width: fit-content;
+  padding: 1rem;
+  background-color: darkblue;
+  color: aquamarine;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: relative;
+  left: 0;
+  top: 0;
+}
