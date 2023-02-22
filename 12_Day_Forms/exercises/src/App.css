@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  flex: 1;
+}
+
+.field:has(textarea) {
+  flex-direction: column;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  height: 5rem;
+}
+
+button {
+  height: 2rem;
+}
+
+pre {
+  text-align: start;
+}
